@@ -1,0 +1,33 @@
+#GET
+GET http://localhost:8087/api/v1/humor_diario/
+Content-Type: application/json
+###
+
+#POST
+POST http://localhost:8087/api/v1/humor_diario
+Content-Type: application/json
+
+{
+    "data":"2023-01-01",
+    "id_aluno":1,
+    "aluno_id":3,
+    "hora":"2023-01-01"
+}
+###
+
+#PUT
+PUT http://localhost:8087/api/v1/humor_diario
+Content-Type: application/json
+
+{
+    "id_humor_diario":1,
+    "data":"2023-01-01",
+    "id_aluno":1,
+    "aluno_id":3,
+    "hora":"2023-01-02"
+}
+###
+
+#DELETE
+DELETE http://localhost:8087/api/v1/humor_diario/2
+Content-Type: application/json

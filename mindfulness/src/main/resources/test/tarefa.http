@@ -1,0 +1,31 @@
+#GET
+GET http://localhost:8087/api/v1/tarefa/
+Content-Type: application/json
+###
+
+#POST
+POST http://localhost:8087/api/v1/tarefa
+Content-Type: application/json
+
+{
+    "id_aluno":1,
+    "descricao":"blablabla",
+    "termino":""
+}
+###
+
+#PUT
+PUT http://localhost:8087/api/v1/tarefa
+Content-Type: application/json
+
+{
+    "id_tarefa":1,
+    "id_aluno":1,
+    "descricao":"blablabla",
+    "termino":"algum dia"
+}
+###
+
+#DELETE
+DELETE http://localhost:8087/api/v1/tarefa/2
+Content-Type: application/json

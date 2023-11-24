@@ -1,0 +1,29 @@
+#GET
+GET http://localhost:8087/api/v1/descricao/
+Content-Type: application/json
+###
+
+#POST
+POST http://localhost:8087/api/v1/descricao
+Content-Type: application/json
+
+{
+    "descricao":"blablabla",
+    "aluno_id":1
+}
+###
+
+#PUT
+PUT http://localhost:8087/api/v1/descricao
+Content-Type: application/json
+
+{
+    "id_descricao":1,
+    "descricao":"blablabla2",
+    "aluno_id":1
+}
+###
+
+#DELETE
+DELETE http://localhost:8087/api/v1/descricao/2
+Content-Type: application/json

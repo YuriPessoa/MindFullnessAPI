@@ -1,0 +1,27 @@
+#GET
+GET http://localhost:8087/api/v1/humor_diario/1/tipo_humor_diario
+Content-Type: application/json
+###
+
+#POST
+POST http://localhost:8087/api/v1/humor_diario/1/tipo_humor_diario
+Content-Type: application/json
+
+{
+    "id_tipo_humor_diario":1,
+    "id_humor_diario":1
+}
+###
+
+#PUT / NOT SUPORTED
+PUT http://localhost:8087/api/v1/humor_diario/1/tipo_humor_diario
+Content-Type: application/json
+
+{
+    "id_humor_diario":1,
+    "id_tipo_humor_diario":1
+}
+
+#DELETE
+DELETE http://localhost:8087/api/v1/humor_diario/1/tipo_humor_diario/1
+Content-Type: application/json

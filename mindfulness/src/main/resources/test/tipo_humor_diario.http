@@ -1,0 +1,29 @@
+#GET
+GET http://localhost:8087/api/v1/tipo_humor_diario/
+Content-Type: application/json
+###
+
+#POST
+POST http://localhost:8087/api/v1/tipo_humor_diario
+Content-Type: application/json
+
+{
+    "tipo_humor":"Pessimo",
+    "icone":""
+}
+###
+
+#PUT
+PUT http://localhost:8087/api/v1/tipo_humor_diario
+Content-Type: application/json
+
+{
+    "id_tipo_humor_diario":1,
+    "tipo_humor":"Otimo",
+    "icone":""
+}
+###
+
+#DELETE
+DELETE http://localhost:8087/api/v1/tipo_humor_diario/2
+Content-Type: application/json
